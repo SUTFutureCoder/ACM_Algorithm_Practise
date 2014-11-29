@@ -18,7 +18,8 @@ while (fscanf(STDIN, "%d%d", $n, $k)){
     //http://bbs.csdn.net/topics/80096794
     $a = explode(" ", $line);
     
-    $score = $a[$k - 1];
+    //此处主意有int！
+    $score = (int)$a[$k - 1];
     $temp = $k;
     
     $a_length = count($a);

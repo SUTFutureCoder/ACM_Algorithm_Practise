@@ -4,24 +4,6 @@ while (fscanf(STDIN, "%d", $n)){
     $line = stream_get_line(STDIN, 65535, "\n");
     $s = explode(" ", $line);
     sort($s);
-    if ($n == 100000 && ($s[0] == 1)){
-        echo 25000 * $s[0] . "\n";
-        break;
-    } 
-    if ($n == 100000 && ($n[0] == 2)){
-        echo "50000\n";
-        break;
-    } 
-    
-    if ($n == 100000 && ($s[0] == 3)){
-        echo "100000\n";
-        break;
-    } 
-    
-    if ($n == 100000 && ($s[0] == 4)){
-        echo "100000\n";
-        break;
-    } 
     
     $head = 0;
     $tail = count($s) - 1;
