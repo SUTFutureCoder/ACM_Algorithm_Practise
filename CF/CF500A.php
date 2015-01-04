@@ -6,7 +6,6 @@ while (fscanf(STDIN, "%d%d", $n, $t)){
     $now = 1;
     for ($i = 0; $i < $n - 1;){
         $now += $s[$now - 1];
-        echo $now;
         if ($now == $t){
             $flag = 1;
             echo "YES\n";
