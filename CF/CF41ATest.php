@@ -12,18 +12,18 @@ class CF41ATest extends PHPUnit_Framework_TestCase{
     
     public function testTranslation(){
         $translation = new Translation();
-        $result = $translation->reverse('code', 'edoc');
+        $result = $translation->reverseByBinary('code', 'edoc');
         $this->assertInternalType('string', $result);
         $this->assertNotEmpty($result);
         $this->assertEquals("YES\n", $result);
         
         
-        $result = $translation->reverse('abb', 'aba');
+        $result = $translation->reverseByBinary('abb', 'aba');
         $this->assertInternalType('string', $result);
         $this->assertNotEmpty($result);
         $this->assertEquals("NO\n", $result);
         
-        $result = $translation->reverse('code', 'code');
+        $result = $translation->reverseByBinary('code', 'code');
         $this->assertInternalType('string', $result);
         $this->assertNotEmpty($result);
         $this->assertEquals("NO\n", $result);
