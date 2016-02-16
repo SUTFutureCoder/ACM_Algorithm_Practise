@@ -19,10 +19,10 @@ int main(void){
 		
 		--i;
 
-		for (int k = i; k <= (half - i) * 2 ; k++){
+		for (int k = 0; k < line - 2 * fabs(half - j) ; k++){
 			printf("%c", ch);
 		}
-
+		
 		printf("\n");
 	}
 
